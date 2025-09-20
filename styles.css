@@ -104,6 +104,38 @@ body::before {
   padding: 0;
 }
 
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-button {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.language-button:hover,
+.language-button:focus {
+  color: var(--text-primary);
+  border-color: var(--accent);
+  background: rgba(88, 210, 255, 0.14);
+  outline: none;
+}
+
+.language-button.active {
+  color: var(--text-primary);
+  border-color: var(--accent-strong);
+  background: rgba(122, 108, 255, 0.18);
+}
+
 .main-nav a,
 .mobile-nav a,
 .footer-links a {
