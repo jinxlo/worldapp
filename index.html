@@ -1,343 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World App Technologies | AI Innovation for Every Enterprise</title>
+    <title>World App Technologies | Soluciones de IA venezolanas para empresas modernas</title>
     <meta
       name="description"
-      content="World App Technologies delivers bespoke AI solutions that accelerate transformation for modern enterprises."
+      content="World App Technologies, con sede en Venezuela, impulsa a las empresas con inferencia en la nube, implementación local y estrategias de IA a medida."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
+      <div class="background-effects" aria-hidden="true">
+        <div class="gradient gradient-1"></div>
+        <div class="gradient gradient-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
       <header class="site-header">
-        <div class="container">
-          <div class="branding">
-            <span class="logo-mark" aria-hidden="true">◎</span>
+        <div class="header-glow" aria-hidden="true"></div>
+        <div class="container header-content">
+          <a class="branding" href="#inicio">
+            <span class="logo-spark" aria-hidden="true">◎</span>
             <span class="logo-text">World App Technologies</span>
-          </div>
-          <nav class="main-nav" aria-label="Primary navigation">
+          </a>
+          <nav class="main-nav" aria-label="Navegación principal" data-i18n-aria-label="nav.primaryAria">
             <ul>
-              <li><a href="#solutions">Solutions</a></li>
-              <li><a href="#platform">Platform</a></li>
-              <li><a href="#approach">Approach</a></li>
-              <li><a href="#insights">Insights</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+              <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+              <li><a href="#metodologia" data-i18n="nav.methodology">Metodología</a></li>
+              <li><a href="#casos" data-i18n="nav.cases">Casos</a></li>
+              <li><a href="#venezuela" data-i18n="nav.team">Equipo</a></li>
+              <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
             </ul>
           </nav>
-          <button class="ghost-button" type="button">Client Portal</button>
+          <div class="header-actions">
+            <div class="language-switcher" role="group" aria-label="Selector de idioma" data-i18n-aria-label="language.selectorAria">
+              <button type="button" class="language-button active" data-language="es" data-i18n="language.spanish" aria-pressed="true">
+                Español
+              </button>
+              <button type="button" class="language-button" data-language="en" data-i18n="language.english" aria-pressed="false">
+                Inglés
+              </button>
+            </div>
+            <a class="ghost-button" href="#contacto" data-i18n="nav.cta">Agenda una consulta</a>
+          </div>
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only" data-i18n="nav.menuToggle">Mostrar u ocultar navegación</span>
             <span class="menu-icon"></span>
           </button>
         </div>
-        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil" data-i18n-aria-label="nav.mobileAria">
           <ul>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#platform">Platform</a></li>
-            <li><a href="#approach">Approach</a></li>
-            <li><a href="#insights">Insights</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a class="ghost-link" href="#contact">Client Portal</a></li>
+            <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+            <li><a href="#metodologia" data-i18n="nav.methodology">Metodología</a></li>
+            <li><a href="#casos" data-i18n="nav.cases">Casos</a></li>
+            <li><a href="#venezuela" data-i18n="nav.team">Equipo</a></li>
+            <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+            <li><a class="ghost-link" href="#contacto" data-i18n="nav.cta">Agenda una consulta</a></li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <section class="hero" id="hero">
-          <div class="container">
-            <div class="hero-content">
-              <div class="eyebrow">Trusted AI partner for ambitious teams</div>
-              <h1>
-                Intelligence engineered to accelerate your next era of growth.
-              </h1>
-              <p>
-                World App Technologies architects responsible AI platforms that move beyond experimentation. From hyper-local intelligence to global cloud deployments, we design, build, and scale solutions that unlock measurable value.
+        <section class="hero" id="inicio">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <div class="hero-badge" data-i18n="hero.badge">Nuevo lanzamiento: Aurora 2.0</div>
+              <div class="eyebrow" data-i18n="hero.eyebrow">IA venezolana con alcance global</div>
+              <h1 data-i18n="hero.heading">Impulsamos a las empresas con inteligencia artificial lista para producción.</h1>
+              <p data-i18n="hero.paragraph">
+                Desde Caracas, construimos experiencias de IA que combinan infraestructura en la nube y despliegues locales para transformar operaciones críticas en Latinoamérica y el mundo.
               </p>
-              <div class="cta-group">
-                <a class="primary-button" href="#contact">Schedule a strategy session</a>
-                <a class="secondary-button" href="#solutions">Explore capabilities</a>
+              <div class="hero-actions">
+                <a class="primary-button" href="#contacto" data-i18n="hero.ctaPrimary">Hablar con un especialista</a>
+                <a class="secondary-button" href="#servicios" data-i18n="hero.ctaSecondary">Ver portafolio de servicios</a>
               </div>
+              <div class="hero-location" data-i18n="hero.location">Base operativa en Caracas, Venezuela</div>
+              <ul class="hero-points">
+                <li data-i18n="hero.point1">Inferencia en la nube optimizada para cargas sensibles.</li>
+                <li data-i18n="hero.point2">Arquitecturas híbridas con soberanía de datos.</li>
+                <li data-i18n="hero.point3">Equipos bilingües expertos en adopción empresarial.</li>
+              </ul>
               <div class="hero-stats">
-                <div>
-                  <span class="stat-value">98%</span>
-                  <span class="stat-label">Client retention across enterprise engagements</span>
+                <div class="stat">
+                  <span class="stat-value">250+</span>
+                  <span class="stat-label" data-i18n="hero.stat1Label">Modelos desplegados en producción</span>
                 </div>
-                <div>
-                  <span class="stat-value">12x</span>
-                  <span class="stat-label">Average automation ROI in the first year</span>
+                <div class="stat">
+                  <span class="stat-value">15</span>
+                  <span class="stat-label" data-i18n="hero.stat2Label">Países atendidos con soporte local</span>
                 </div>
-                <div>
-                  <span class="stat-value">40+</span>
-                  <span class="stat-label">Specialized AI experts in product, research, and ops</span>
+                <div class="stat">
+                  <span class="stat-value">24/7</span>
+                  <span class="stat-label" data-i18n="hero.stat3Label">Monitoreo y respuesta en tiempo real</span>
                 </div>
               </div>
             </div>
             <div class="hero-visual" aria-hidden="true">
-              <div class="orb orb-1"></div>
-              <div class="orb orb-2"></div>
-              <div class="mesh-card">
-                <h2>Unified AI Fabric</h2>
-                <p>Converged insights across devices, clouds, and ecosystems.</p>
+              <div class="glass-card">
+                <span class="card-badge" data-i18n="hero.card.badge">Disponible en nube y on-premise</span>
+                <h2 data-i18n="hero.card.title">Suite Aurora</h2>
+                <p data-i18n="hero.card.text">Orquestador modular de inferencia, automatización y seguridad.</p>
                 <ul>
-                  <li>Adaptive knowledge graph</li>
-                  <li>Real-time compliance guardrails</li>
-                  <li>Extensible SDK for your teams</li>
+                  <li data-i18n="hero.card.item1">Panel de desempeño unificado</li>
+                  <li data-i18n="hero.card.item2">Compatibilidad con modelos propietarios y abiertos</li>
+                  <li data-i18n="hero.card.item3">Controles de gobernanza auditables</li>
                 </ul>
               </div>
+              <div class="floating-orb orb-1"></div>
+              <div class="floating-orb orb-2"></div>
             </div>
           </div>
         </section>
 
-        <section class="ticker" aria-label="Client highlights">
-          <div class="ticker-track">
-            <span>Fortune 500 Retail</span>
-            <span>Digital Native Unicorns</span>
-            <span>Smart Cities Initiatives</span>
-            <span>Healthcare Innovators</span>
-            <span>Logistics Networks</span>
-            <span>Financial Services Leaders</span>
-            <span>Next-Gen Manufacturing</span>
+        <section class="section services" id="servicios">
+          <div class="container">
+            <div class="section-heading">
+              <div class="eyebrow" data-i18n="services.eyebrow">Servicios principales</div>
+              <h2 data-i18n="services.heading">Soluciones integrales de IA para cada etapa de adopción</h2>
+              <p data-i18n="services.paragraph">
+                Acompañamos desde la estrategia hasta la operación continua, combinando talento local y alianzas globales.
+              </p>
+            </div>
+            <div class="card-grid four">
+              <article class="service-card">
+                <span class="service-icon">☁️</span>
+                <h3 data-i18n="services.card1.title">Inferencia de IA en la nube</h3>
+                <p data-i18n="services.card1.text">
+                  Desplegamos arquitecturas multi-región con costos optimizados, observabilidad y cumplimiento normativo latinoamericano.
+                </p>
+              </article>
+              <article class="service-card">
+                <span class="service-icon">🏭</span>
+                <h3 data-i18n="services.card2.title">Implementación local y en el borde</h3>
+                <p data-i18n="services.card2.text">
+                  Llevamos modelos a plantas, sucursales y centros de datos soberanos con baja latencia y mantenimiento gestionado.
+                </p>
+              </article>
+              <article class="service-card">
+                <span class="service-icon">🤖</span>
+                <h3 data-i18n="services.card3.title">Automatización inteligente de procesos</h3>
+                <p data-i18n="services.card3.text">
+                  Diseñamos asistentes, flujos y copilotos que conectan sus sistemas internos y aceleran la toma de decisiones.
+                </p>
+              </article>
+              <article class="service-card">
+                <span class="service-icon">🔒</span>
+                <h3 data-i18n="services.card4.title">Laboratorio de datos y ética</h3>
+                <p data-i18n="services.card4.text">
+                  Curamos datos, evaluamos sesgos y definimos políticas de gobernanza que protegen a su organización.
+                </p>
+              </article>
+            </div>
           </div>
         </section>
 
-        <section class="section" id="solutions">
+        <section class="section highlight" id="metodologia">
+          <div class="container split">
+            <div>
+              <div class="section-heading">
+                <div class="eyebrow" data-i18n="methodology.eyebrow">Nuestra metodología</div>
+                <h2 data-i18n="methodology.heading">De la visión a la operación continua</h2>
+                <p data-i18n="methodology.paragraph">
+                  Construimos programas de IA sostenibles combinando discovery inmersivo, iteraciones controladas y soporte dedicado en español e inglés.
+                </p>
+              </div>
+              <ul class="timeline">
+                <li>
+                  <span class="timeline-step">1</span>
+                  <div>
+                    <h3 data-i18n="methodology.step1.title">Diagnóstico inmersivo</h3>
+                    <p data-i18n="methodology.step1.text">Mapeamos procesos, datos críticos y objetivos regulatorios junto a sus equipos.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-step">2</span>
+                  <div>
+                    <h3 data-i18n="methodology.step2.title">Blueprint de arquitectura</h3>
+                    <p data-i18n="methodology.step2.text">Diseñamos arquitecturas híbridas con planes de gobernanza, seguridad y adopción.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-step">3</span>
+                  <div>
+                    <h3 data-i18n="methodology.step3.title">Implementación iterativa</h3>
+                    <p data-i18n="methodology.step3.text">Activamos pilotos controlados, medimos impacto y ajustamos modelos con datos reales.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-step">4</span>
+                  <div>
+                    <h3 data-i18n="methodology.step4.title">Operación continua</h3>
+                    <p data-i18n="methodology.step4.text">Operamos, monitoreamos y entrenamos equipos internos para asegurar escalabilidad.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="signal-card" aria-hidden="true">
+              <div class="signal-header">
+                <span data-i18n="hero.card.title">Suite Aurora</span>
+                <span class="status-pill">LIVE</span>
+              </div>
+              <div class="signal-metrics">
+                <div>
+                  <span class="label" data-i18n="hero.stat1Label">Modelos desplegados en producción</span>
+                  <span class="value">250+</span>
+                </div>
+                <div>
+                  <span class="label" data-i18n="hero.stat2Label">Países atendidos con soporte local</span>
+                  <span class="value">15</span>
+                </div>
+                <div>
+                  <span class="label" data-i18n="hero.stat3Label">Monitoreo y respuesta en tiempo real</span>
+                  <span class="value">24/7</span>
+                </div>
+              </div>
+              <div class="signal-footer" data-i18n="hero.point2">Arquitecturas híbridas con soberanía de datos.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cases" id="casos">
           <div class="container">
             <div class="section-heading">
-              <div class="eyebrow">Solutions</div>
-              <h2>Precision-built intelligence for every stage of your AI journey</h2>
-              <p>
-                Our teams partner from discovery to deployment, aligning AI investments with measurable business outcomes and ethical frameworks.
+              <div class="eyebrow" data-i18n="cases.eyebrow">Historias de impacto</div>
+              <h2 data-i18n="cases.heading">Resultados medibles en sectores críticos</h2>
+              <p data-i18n="cases.paragraph">
+                Unimos analítica avanzada, ingeniería de plataformas y acompañamiento cultural para acelerar resultados tangibles.
               </p>
             </div>
             <div class="card-grid three">
-              <article class="card">
-                <div class="card-icon">⚡</div>
-                <h3>AI Strategy &amp; Advisory</h3>
-                <p>
-                  Translate ambition into actionable roadmaps with executive workshops, industry benchmarking, and opportunity analysis tailored to your organization.
-                </p>
+              <article class="case-card">
+                <span class="case-sector" data-i18n="cases.card1.title">Finanzas en Latinoamérica</span>
+                <p data-i18n="cases.card1.text">Migramos el motor de scoring de un banco regional a inferencia en la nube con gobernanza soberana, reduciendo el riesgo crediticio en 18%.</p>
+                <div class="case-result" data-i18n="cases.card1.result">✔ Tiempo de aprobación reducido a 45 segundos</div>
               </article>
-              <article class="card">
-                <div class="card-icon">☁️</div>
-                <h3>Cloud AI Platforms</h3>
-                <p>
-                  Architect cloud-native systems optimized for security, scalability, and interoperability. We integrate seamlessly with AWS, Azure, GCP, and sovereign clouds.
-                </p>
+              <article class="case-card">
+                <span class="case-sector" data-i18n="cases.card2.title">Retail y logística</span>
+                <p data-i18n="cases.card2.text">Implementamos modelos locales en centros de distribución venezolanos para optimizar inventarios y rutas con conectividad limitada.</p>
+                <div class="case-result" data-i18n="cases.card2.result">✔ 32% menos quiebre de stock</div>
               </article>
-              <article class="card">
-                <div class="card-icon">📍</div>
-                <h3>Local &amp; Edge Intelligence</h3>
-                <p>
-                  Deploy AI at the edge with resilient, low-latency models powering local operations, IoT networks, and on-premises workloads without compromise.
-                </p>
+              <article class="case-card">
+                <span class="case-sector" data-i18n="cases.card3.title">Energía y servicios públicos</span>
+                <p data-i18n="cases.card3.text">Habilitamos monitoreo predictivo de activos críticos combinando sensores IoT y analítica en campo con tableros centralizados.</p>
+                <div class="case-result" data-i18n="cases.card3.result">✔ 4x detección temprana de anomalías</div>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="section" id="platform">
+        <section class="section venezuela" id="venezuela">
           <div class="container split">
             <div>
               <div class="section-heading">
-                <div class="eyebrow">The World App Platform</div>
-                <h2>Accelerate delivery with a modular AI foundation</h2>
-                <p>
-                  Harness a library of reusable accelerators, compliant data pipelines, and governance frameworks designed to get pilots live in weeks—not months.
+                <div class="eyebrow" data-i18n="venezuela.eyebrow">Raíces venezolanas</div>
+                <h2 data-i18n="venezuela.heading">Orgullosamente venezolanos, conectados con el mundo</h2>
+                <p data-i18n="venezuela.paragraph">
+                  Nuestros equipos en Caracas combinan talento científico, diseño de producto y conocimiento regulatorio para ofrecer experiencias de IA contextualizadas a Latinoamérica.
                 </p>
               </div>
-              <ul class="feature-list">
-                <li>
-                  <strong>Unified control plane.</strong> One dashboard for orchestrating models, data, and guardrails across hybrid infrastructures.
-                </li>
-                <li>
-                  <strong>Responsible by design.</strong> Built-in bias mitigation, observability, and human-in-the-loop workflows ensure accountable outcomes.
-                </li>
-                <li>
-                  <strong>Developer-first.</strong> SDKs, APIs, and workflow templates empower your teams to iterate quickly and securely.
-                </li>
+              <ul class="value-list">
+                <li data-i18n="venezuela.point1">Centros de excelencia en Caracas y Valencia con laboratorios de MLOps.</li>
+                <li data-i18n="venezuela.point2">Programas de transferencia tecnológica y capacitación bilingüe.</li>
+                <li data-i18n="venezuela.point3">Alianzas con universidades y comunidades tecnológicas venezolanas.</li>
               </ul>
-              <a class="text-link" href="#contact">Book a technical deep dive →</a>
             </div>
-            <div class="platform-panel" aria-hidden="true">
-              <div class="panel-header">Live systems overview</div>
-              <div class="panel-body">
-                <div class="signal">
-                  <span class="signal-label">Inference latency</span>
-                  <span class="signal-value">42ms</span>
-                  <span class="signal-trend positive">+12%</span>
-                </div>
-                <div class="signal">
-                  <span class="signal-label">Model reliability</span>
-                  <span class="signal-value">99.8%</span>
-                  <span class="signal-trend neutral">Stable</span>
-                </div>
-                <div class="signal">
-                  <span class="signal-label">Secure deployments</span>
-                  <span class="signal-value">184</span>
-                  <span class="signal-trend positive">+28</span>
-                </div>
-                <div class="sparkline" role="img" aria-label="Platform performance trend visualization"></div>
+            <div class="culture-card">
+              <span class="card-title" data-i18n="venezuela.card.title">Conectividad regional</span>
+              <p data-i18n="venezuela.card.text">Integramos hubs en Miami, Ciudad de México y Bogotá para garantizar respuesta inmediata.</p>
+              <div class="culture-details">
+                <span data-i18n="venezuela.card.detail1">Mesa de soporte 24/7 en español e inglés</span>
+                <span data-i18n="venezuela.card.detail2">Equipos híbridos on-site y remotos</span>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section muted" id="insights">
-          <div class="container">
-            <div class="section-heading">
-              <div class="eyebrow">Impact</div>
-              <h2>Delivering outcomes that compound across the enterprise</h2>
-              <p>
-                From first pilot to scaled transformation, we anchor every engagement in measurable KPIs that matter to your teams.
-              </p>
-            </div>
-            <div class="metrics-grid">
-              <div class="metric">
-                <span class="metric-value">68%</span>
-                <span class="metric-label">Reduction in manual triage time for a national insurer</span>
-              </div>
-              <div class="metric">
-                <span class="metric-value">4.7M</span>
-                <span class="metric-label">New customer interactions personalized via local AI assistants</span>
-              </div>
-              <div class="metric">
-                <span class="metric-value">21</span>
-                <span class="metric-label">Markets activated with multilingual AI agents in under 90 days</span>
-              </div>
-              <div class="metric">
-                <span class="metric-value">35%</span>
-                <span class="metric-label">Increase in supply-chain resilience through predictive intelligence</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="approach">
-          <div class="container">
-            <div class="section-heading">
-              <div class="eyebrow">Our approach</div>
-              <h2>Guided by rigor, grounded in partnership</h2>
-              <p>
-                We embed cross-functional squads that work alongside your teams to co-create, iterate, and scale with confidence.
-              </p>
-            </div>
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-marker">1</div>
-                <div>
-                  <h3>Discover &amp; align</h3>
-                  <p>
-                    Map objectives, data sources, and governance requirements to craft a program blueprint with stakeholder consensus.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-marker">2</div>
-                <div>
-                  <h3>Design &amp; validate</h3>
-                  <p>
-                    Rapid prototyping with real data, rigorous evaluation, and transparent reporting to fine-tune performance.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-marker">3</div>
-                <div>
-                  <h3>Deploy &amp; scale</h3>
-                  <p>
-                    Production-grade deployments with observability, lifecycle management, and enablement for sustained adoption.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section muted">
+        <section class="section muted" id="testimonios">
           <div class="container testimonials">
             <div class="section-heading">
-              <div class="eyebrow">What partners say</div>
-              <h2>Future-focused teams choose World App Technologies</h2>
+              <div class="eyebrow" data-i18n="testimonials.eyebrow">Confianza comprobada</div>
+              <h2 data-i18n="testimonials.heading">Historias de clientes que evolucionan con nuestra IA</h2>
             </div>
             <div class="testimonial-grid">
               <figure class="testimonial">
-                <blockquote>
-                  “World App Technologies transformed our fragmented data into a decision engine that supports every storefront. Their teams felt like an extension of ours.”
+                <blockquote data-i18n="testimonials.quote1">
+                  “Con World App Technologies migramos nuestros modelos críticos a infraestructura híbrida sin interrumpir operaciones. Son el socio estratégico que buscábamos.”
                 </blockquote>
                 <figcaption>
-                  <span class="name">Chief Digital Officer</span>
-                  <span class="company">Global Retail Group</span>
+                  <span class="name" data-i18n="testimonials.role1">VP de Transformación Digital</span>
+                  <span class="company" data-i18n="testimonials.company1">Banco universal venezolano</span>
                 </figcaption>
               </figure>
               <figure class="testimonial">
-                <blockquote>
-                  “Their responsible AI framework gave our regulators the transparency they needed without slowing innovation. We delivered in record time.”
+                <blockquote data-i18n="testimonials.quote2">
+                  “Su equipo entendió nuestros retos locales y desplegó soluciones de IA confiables que hoy se replican en toda la región.”
                 </blockquote>
                 <figcaption>
-                  <span class="name">Head of Innovation</span>
-                  <span class="company">Fortune 100 Financial Services</span>
+                  <span class="name" data-i18n="testimonials.role2">Directora de Operaciones</span>
+                  <span class="company" data-i18n="testimonials.company2">Cadena de retail latinoamericana</span>
                 </figcaption>
               </figure>
             </div>
           </div>
         </section>
 
-        <section class="section" id="contact">
+        <section class="section contact" id="contacto">
           <div class="container split">
             <div>
               <div class="section-heading">
-                <div class="eyebrow">Let’s build what’s next</div>
-                <h2>Ready to architect your AI advantage?</h2>
-                <p>
-                  Share a bit about your objectives and our consultants will curate a roadmap session tailored to your organization.
+                <div class="eyebrow" data-i18n="contact.eyebrow">Comencemos</div>
+                <h2 data-i18n="contact.heading">¿Listo para diseñar su ecosistema de IA?</h2>
+                <p data-i18n="contact.paragraph">
+                  Comparta sus objetivos y prepararemos una sesión estratégica personalizada con especialistas en cloud y despliegues locales.
                 </p>
                 <div class="contact-details">
-                  <p><strong>Email:</strong> hello@worldapptech.com</p>
-                  <p><strong>HQ:</strong> 230 Market Street, Suite 1800, San Francisco, CA</p>
-                  <p><strong>Global presence:</strong> New York · London · Singapore</p>
+                  <p><strong data-i18n="contact.labelEmail">Correo:</strong> hello@worldapptech.com</p>
+                  <p><strong data-i18n="contact.labelHq">Oficina principal:</strong> Torre Humboldt, Caracas</p>
+                  <p><strong data-i18n="contact.labelGlobal">Presencia regional:</strong> Caracas · Miami · Ciudad de México</p>
                 </div>
               </div>
             </div>
             <form class="contact-form">
               <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Alex Morgan" required />
+                <label for="name" data-i18n="form.nameLabel">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Mariana Torres" required />
               </div>
               <div class="form-group">
-                <label for="email">Work email</label>
-                <input type="email" id="email" name="email" placeholder="alex@company.com" required />
+                <label for="email" data-i18n="form.emailLabel">Correo laboral</label>
+                <input type="email" id="email" name="email" placeholder="mariana@empresa.com" required />
               </div>
               <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" placeholder="Your organization" />
+                <label for="company" data-i18n="form.companyLabel">Empresa</label>
+                <input type="text" id="company" name="company" placeholder="Su organización" data-i18n-placeholder="form.companyPlaceholder" />
               </div>
               <div class="form-group">
-                <label for="project">Initiative focus</label>
+                <label for="project" data-i18n="form.projectLabel">Enfoque de la iniciativa</label>
                 <select id="project" name="project">
-                  <option>AI strategy alignment</option>
-                  <option>Cloud AI platform</option>
-                  <option>Local/edge intelligence</option>
-                  <option>Responsible AI governance</option>
-                  <option>Other</option>
+                  <option data-i18n="form.option1">Inferencia en la nube</option>
+                  <option data-i18n="form.option2">Implementación local/en el borde</option>
+                  <option data-i18n="form.option3">Automatización de procesos</option>
+                  <option data-i18n="form.option4">Gobernanza y ética de IA</option>
+                  <option data-i18n="form.option5">Otro</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="message">Tell us more</label>
-                <textarea id="message" name="message" rows="4" placeholder="What outcomes are you targeting?"></textarea>
+                <label for="message" data-i18n="form.messageLabel">Cuéntenos más</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="¿Qué resultados desea alcanzar?"
+                  data-i18n-placeholder="form.messagePlaceholder"
+                ></textarea>
               </div>
-              <button class="primary-button" type="submit">Submit inquiry</button>
-              <p class="form-caption">
-                By submitting this form, you agree to our privacy policy and consent to receive communications from World App Technologies.
+              <button class="primary-button" type="submit" data-i18n="form.submit">Enviar consulta</button>
+              <p class="form-caption" data-i18n="form.caption">
+                Al enviar este formulario, acepta nuestra política de privacidad y consiente recibir comunicaciones de World App Technologies.
               </p>
             </form>
           </div>
@@ -346,18 +375,19 @@
 
       <footer class="site-footer">
         <div class="container">
-          <div class="branding">
-            <span class="logo-mark" aria-hidden="true">◎</span>
+          <a class="branding" href="#inicio">
+            <span class="logo-spark" aria-hidden="true">◎</span>
             <span class="logo-text">World App Technologies</span>
-          </div>
+          </a>
           <div class="footer-links">
-            <a href="#hero">Overview</a>
-            <a href="#solutions">Solutions</a>
-            <a href="#platform">Platform</a>
-            <a href="#approach">Approach</a>
-            <a href="#contact">Contact</a>
+            <a href="#inicio" data-i18n="nav.home">Inicio</a>
+            <a href="#servicios" data-i18n="nav.services">Servicios</a>
+            <a href="#metodologia" data-i18n="nav.methodology">Metodología</a>
+            <a href="#casos" data-i18n="nav.cases">Casos</a>
+            <a href="#venezuela" data-i18n="nav.team">Equipo</a>
+            <a href="#contacto" data-i18n="nav.contact">Contacto</a>
           </div>
-          <p class="legal">© <span id="current-year"></span> World App Technologies. All rights reserved.</p>
+          <p class="legal" data-i18n="footer.legal">© <span id="current-year"></span> World App Technologies. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>
